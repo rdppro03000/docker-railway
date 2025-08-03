@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Set SSH_USERNAME and SSH_PASSWORD by default or create an .env file (refer to.env.example)
-: ${SSH_USERNAME:="myuser"}
-: ${SSH_PASSWORD:="mypassword"}
+: ${SSH_USERNAME:="casey"}
+: ${SSH_PASSWORD:="123456"}
 
 # Set root password if root login is enabled
-: ${ROOT_PASSWORD:=""}
+: ${ROOT_PASSWORD:="123456"}
 if [ -n "$ROOT_PASSWORD" ]; then
     echo "root:$ROOT_PASSWORD" | chpasswd
     echo "Root password set"
